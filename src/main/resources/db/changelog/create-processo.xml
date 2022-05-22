@@ -13,10 +13,11 @@
             </not>
         </preConditions>
         <createTable tableName="processo">
-            <column autoIncrement="true" name="id" type="BIGINT">
+            <column autoIncrement="true" name="numero" type="BIGINT">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
             <column name="descricao" type="VARCHAR(255)"/>
+            <column name="reu" type="VARCHAR(255)"/>
         </createTable>
 
         <rollback>
